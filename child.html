@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script language="javascript" type="text/javascript" src="WdatePicker.js"></script>
+</head>
+
+<script type="text/javascript">
+    function child_click(){
+        alert("调用的子页面函数");
+    }
+    function child_clickDate(){
+        var childDate=document.getElementById("childDate").value;
+        alert("子页面时间控件的值为："+childDate);
+    }
+
+</script>
+<body>
+<div class="childPage" id="childDiv" style="border:red solid 1px;" >
+    <label>子页面时间控件</label>
+    <input id="childDate" class="Wdate" type="text" onclick="WdatePicker()">
+</div>
+</body>
+</html>
